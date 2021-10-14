@@ -81,9 +81,8 @@ async function schedulePushNotification() {
       title: "You've got mail! 📬",
       body: "Here is the notification body",
       data: { data: "goes here" },
-      channelId: "evacuation",
     },
-    trigger: { seconds: 1 },
+    trigger: { seconds: 1, channelId: "evacuation" },
   });
 }
 
