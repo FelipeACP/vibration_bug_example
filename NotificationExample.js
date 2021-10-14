@@ -112,7 +112,7 @@ async function registerForPushNotificationsAsync() {
       name: "leave immediately",
       description: "Triggered when emergency requires evacuation warnings",
       importance: Notifications.AndroidImportance.MAX,
-      vibrationPattern: [0, 5000],
+      vibrationPattern: Array(8).fill(250),
       sound: "default",
       lightColor: "#FF231F7C",
     });
